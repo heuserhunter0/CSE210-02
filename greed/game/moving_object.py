@@ -1,4 +1,3 @@
-from pickle import TRUE
 from game.common.color import Color
 from game.common.coordinate import Coordinate
 """
@@ -22,7 +21,7 @@ class MovingObject:
             _velocity (Coordinate): The speed and direction.
         """
 
-    def __init__(self, can_move_x = TRUE, can_move_y = True):
+    def __init__(self, can_move_x = True, can_move_y = True):
         """Constructs a new Actor.
 
         Args:
