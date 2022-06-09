@@ -19,6 +19,8 @@ class MovingObject:
             _color (Color): The color of the text.
             _position (Coordinate): The screen coordinates.
             _velocity (Coordinate): The speed and direction.
+            _can_move_x (boolean) = If true, restricts horizontal movement 
+            _can_move_y (boolean) = If true, restricts vertical movement
         """
 
     def __init__(self, can_move_x = True, can_move_y = True):
