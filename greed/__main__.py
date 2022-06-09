@@ -1,13 +1,14 @@
 from game.services.keyboard_service import KeyboardService
 from game.services.video_service import VideoService
-from game.cast import Cast
+from game.casting.cast import Cast
 from game.director import Director
 from game.moving_object import MovingObject
-from game.rock import Rock
-from game.gem import Gem
+from game.casting.rock import Rock
+from game.casting.gem import Gem
 from game.common.coordinate import Coordinate
 from game.common.color import Color
 import random
+
 
 """
 This file will excute and start the game
@@ -83,7 +84,6 @@ def main():
     video_service = VideoService(CAPTION, MAX_X, MAX_Y, CELL_SIZE, FRAME_RATE)
     director = Director(keyboard_service, video_service)
     director.start_game(cast)
-
-
+        
 if __name__ == "__main__":
     main()
