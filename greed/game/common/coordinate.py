@@ -1,5 +1,5 @@
 """
-    The responsibility of Point is to hold and provide information about itself. Point has a few 
+    The responsibility of Coordinate is to hold and provide information about itself. Coordinate has a few 
     convenience methods for adding, scaling, and comparing them.
 """
 
@@ -18,10 +18,10 @@ class Coordinate:
         and the given one
         
         Args:
-            other (coordinate): The point to add.
+            other (coordinate): The coordinate to add.
         
         Returns:
-            Point: A new point that is the sum.
+            Coordinate: A new coordinate that is the sum.
             
         '''
         x = self._x + other.get_x()
@@ -38,6 +38,7 @@ class Coordinate:
         Returns:
             boolean: True if both x and y are equal; false if otherwise.
         '''
+        #return abs(self._x - other.get_x()) < 3 and (self._y - other.get_y()) < 3
         return self._x == other.get_x() and self._y == other.get_y()
 
     def get_x(self):
