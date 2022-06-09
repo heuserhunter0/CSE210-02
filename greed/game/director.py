@@ -1,4 +1,3 @@
-from email import message
 from game.common.coordinate import Coordinate
 
 
@@ -74,8 +73,7 @@ class Director:
             else:
                 artifact.set_velocity(Coordinate(x=0, y=+1))
                 artifact.move_next(max_x, max_y)
-                
-        
+            
     def _do_outputs(self, cast):
         """Draws the actors on the screen.
         
